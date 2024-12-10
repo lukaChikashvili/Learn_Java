@@ -4,26 +4,24 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
-		
-         System.out.println("enter your name");
-         
-         String name = scanner.nextLine();
-         
-         System.out.println("enter your age");
-         
-         int age = scanner.nextInt();
-         
-         if(age < 18) {
-        	 System.out.println("dear " + name + ", you are not allowed to drive");
-         }else {
-        	 System.out.println("dear " + name + ", you are  allowed to drive");
-         }
-         
-        
-         
-         scanner.close();
-        
+	    double x;
+	    double y;
+	    double z;
+	    
+	    Scanner scanner = new Scanner(System.in);
+	    
+	    System.out.println("Enter side x: ");
+	    x = scanner.nextDouble();
+	    
+	    System.out.println("Enter side y: ");
+	    y = scanner.nextDouble();
+	    
+	    z = Math.sqrt((x * x) + (y * y));
+	    
+	    System.out.println("Hypetonuse is " + z);
+	    
+	    scanner.close();
+	    
 	}
 
 }
