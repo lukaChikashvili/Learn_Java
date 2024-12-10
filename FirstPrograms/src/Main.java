@@ -4,23 +4,34 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-	    double x;
-	    double y;
-	    double z;
-	    
-	    Scanner scanner = new Scanner(System.in);
-	    
-	    System.out.println("Enter side x: ");
-	    x = scanner.nextDouble();
-	    
-	    System.out.println("Enter side y: ");
-	    y = scanner.nextDouble();
-	    
-	    z = Math.sqrt((x * x) + (y * y));
-	    
-	    System.out.println("Hypetonuse is " + z);
-	    
-	    scanner.close();
+      Scanner scanner = new Scanner(System.in);
+      
+        int rows;
+        int columns;
+        
+        String symbol = "";
+        
+        System.out.println("Enter # of rows: ");
+        rows = scanner.nextInt();
+        
+        System.out.println("Enter # of columns: ");
+        columns = scanner.nextInt();
+        
+        System.out.println("Enter symbol to use");
+        symbol = scanner.next();
+        
+        for(int i = 1; i <= rows; i++) {
+        	System.out.println();
+        	
+        	for(int j = 1; j <= columns; j++) {
+        		System.out.print(symbol);
+        	}
+        }
+        
+        scanner.close();
+        
+	  
+	  
 	    
 	}
 
