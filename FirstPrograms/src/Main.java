@@ -1,35 +1,33 @@
-import java.util.Scanner;
+
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-      Scanner scanner = new Scanner(System.in);
+        String[][] cars = new String[3][3];
+        
+        cars[0][0] = "Camaro";
+        cars[0][1] = "Corvette";
+        cars[0][2] = "silverado";
+        
+        cars[1][0] = "mustang";
+        cars[1][1] = "F-150";
+        cars[1][2] = "ferrari";
+        
+        cars[2][0] = "tesla";
+        cars[2][1] = "sfsf";
+        cars[2][2] = "sfsfsff";
+        
+        
+          for(int i = 0; i < cars.length; i++) {
+        	  System.out.println();
+        	  for(int j = 0; j < cars[i].length; j++) {
+        		  System.out.print(cars[i][j] + " ");
+        	  }
+          }
+       
+        
       
-        int rows;
-        int columns;
-        
-        String symbol = "";
-        
-        System.out.println("Enter # of rows: ");
-        rows = scanner.nextInt();
-        
-        System.out.println("Enter # of columns: ");
-        columns = scanner.nextInt();
-        
-        System.out.println("Enter symbol to use");
-        symbol = scanner.next();
-        
-        for(int i = 1; i <= rows; i++) {
-        	System.out.println();
-        	
-        	for(int j = 1; j <= columns; j++) {
-        		System.out.print(symbol);
-        	}
-        }
-        
-        scanner.close();
-        
 	  
 	  
 	    
