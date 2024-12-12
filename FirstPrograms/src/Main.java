@@ -4,9 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
         
-      Dog dog = new Dog();
+      Hero hero1 = new Hero("batman", 42, "$$$");
       
-      dog.speak();
+      System.out.println(hero1.name);
+      System.out.println(hero1.age);
       
 	}
 
