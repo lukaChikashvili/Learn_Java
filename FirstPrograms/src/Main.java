@@ -1,21 +1,23 @@
-import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Main {
 
 	public static void main(String[] args) {
 	
-	    File file = new File("text.txt");
-	    
-	    if(file.exists()) {
-	    	System.out.println("this file exists");
-	    	System.out.println(file.getPath()); // gets file path
-	    	System.out.println(file.getAbsolutePath()); // gets absolute path
-	    	file.delete();  // delete file
-	    	
-	    }else {
-	    	System.out.println("this file doesn't exists");
-	    }
-      
+		try {
+			 FileWriter writer = new FileWriter("poem.txt");
+			 writer.write("this is a poem");
+			 writer.close();
+			 
+			   
+		}catch(IOException e ) {
+			 e.printStackTrace();
+		}
+	  
+	   
+	   
+	   
       
 	}
 
